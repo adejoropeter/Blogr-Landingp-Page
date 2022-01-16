@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsla(0, 0%, 100%, 0.76);
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    background-color: hsl(356, 100%, 66%);
+    border-bottom-left-radius: 50px;
+    background-image: url(../images/bg-pattern-intro-desktop.svg);
+    padding: 0 100px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dd {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    /* font-weight:900; */
+    font-size: 35px;
+    color: hsl(0, 0%, 100%);
+}
+
+.nav-bar ul {
+    display: flex;
+    padding-left: 30px;
+}
+
+.nav-bar ul li {
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+ul li a:hover{
+    color: indigo;
+}
+
+.pro {
+    position: relative;
+}
+
+.drop-menu ul li {
+    display: none;
+}
+
+.pro:hover .drop-menu ul {
+    position: absolute;
+    top: 10%;
+    left: 18%;
+    display: block;
+    width: 80px;
+    height: 40px;
+    padding: 12px;
+    margin-top: 10px;
+
+}
+
+.pro:hover .drop-menu ul li {
+    display: block;
+    font-size: 16px;
+    background-color: hsl(237, 17%, 21%);
+    color: hsl(240, 2%, 79%);
+    cursor: pointer;
+    text-transform:capitalize;
+}
+
+
+
+.dd a {
+    color: hsl(240, 2%, 79%);
+}
+
+
+.login a {
+    color: hsl(240, 2%, 79%);
+}
+
+.btn {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    font-weight: 700;
+    outline: none;
+    border: 1px solid hsl(356, 100%, 66%);
+    padding: 10px 16px 10px 16px;
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: all 0.4s linear;
+    position: relative;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(356, 100%, 66%);
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+/* .btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+
+} */
+
+.header {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.header * {
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 100%);
+}
+
+.header p {
+    color: hsl(240, 2%, 79%);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+.button a {
+    margin-right: 10px;
+}
+
+.button a .btn-1 {
+    border: 1px solid hsl(356, 100%, 66%);
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    padding: 8px 10px 8px 10px;
+    border-radius: 18px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.button a .btn-2 {
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsl(356, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    padding: 8px 10px 8px 10px;
+    border-radius: 18px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.intro p {
+    max-width: 390px;
+    line-height: 25px;
+    color: hsl(237, 17%, 21%);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.intro img {
+    max-width: 500px;
+}
+
+
+h3 {
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+}
+
+h4 {
+    color: hsl(208, 49%, 24%);
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.phone {
+    background-color: hsl(237, 17%, 21%);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10em;
+    overflow: initial;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.phone img {
+    width: 350px;
+}
+
+
+.phone p {
+    color: hsl(240, 2%, 79%);
+    max-width: 500px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.phone h5 {
+    font-size: 18px;
+    color: hsl(240, 2%, 79%);
+    padding-bottom: 20px;
+}
+
+.lapi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    position: relative;
+}
+
+
+.lapi .ppp {
+    /* flex: 1; */
+    position: absolute;
+    padding-left: 14em;
+    /* right: 0px; */
+}
+
+.ppp h5 {
+    font-size: 18px;
+    color: hsl(237, 17%, 21%);
+    padding-bottom: 20px;
+}
+
+.lapi img {
+    max-width: 500px;
+    transform: translateX(-400px);
+}
+
+.lapi p {
+    max-width: 300px;
+    padding-bottom: 40px;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: hsl(237, 17%, 21%);
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+footer ul li {
+    /* display: block; */
+    color: hsl(240, 2%, 79%);
+    font-size: 10px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+h6 {
+    padding-bottom: 10px;
+    color: hsl(240, 2%, 79%);
+
+}
+
+
+
+/* 
+- Light red (CTA text): hsl(356, 100%, 66%) 
+- Very light red (CTA hover background): hsl(355, 100%, 74%) 
+- Very dark blue (headings): hsl(208, 49%, 24%) ### Neutral 
+- White (text): hsl(0, 0%, 100%) - Grayish blue (footer text): hsl(240, 2%, 79%)
+ - Very dark grayish blue (body copy): hsl(207, 13%, 34%) 
+ - Very dark black blue (footer background): hsl(240, 10%, 16%) 
+ ### Gradient Background gradient 
+ - Intro/CTA mobile nav: - Very light red: hsl(13, 100%, 72%)
+  - Light red: hsl(353, 100%, 62%) Background gradient - body: 
+  - Very dark gray blue: hsl(237, 17%, 21%) 
+- Very dark desaturated blue: hsl(237, 23%, 32%) */
